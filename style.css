@@ -1,9 +1,18 @@
-
-body{
-    background-color: rgba(248, 213, 96, 0.76);
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-h1{
-    color: rgb(255, 60, 0);
-    font-family:cursive;
+#Nom{
+    font-family:cursive; 
+    color:brown; 
+    font-weight: 700;
+}
+
+header{
+    box-shadow: 2px 0px 6px black;
+    z-index: 1;
+    position: sticky;
+    top: 0;
 }
