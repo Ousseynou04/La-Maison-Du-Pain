@@ -7,20 +7,22 @@
     <link rel="icon" type="image/png" href="/images/logo_maison_du_pain.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
 
     <header>
         <!-- Barre de Naviguation de l'Accueil  -->
-        <nav class="container-fluid d-flex justify-content-between align-items-center pt-3 bg-warning-subtle">
+        <nav class="barnav container-fluid px-5 d-flex justify-content-between align-items-center pt-3 bg-warning-subtle">
             <!-- partie du logo + nom  -->
             <a href="index.html" class="text-decoration-none text-dark">
                 <div class="d-flex gap-3">
-                    <img src="images/logo_maison_du_pain.png" class="h-50" style="width: 3rem;" alt="logo">
-                    <div style="line-height: 1px;">
+                    <img src="images/logo_maison_du_pain.png" class="logo h-50" style="width: 3rem;" alt="logo">
+                    <div class="NameBrand" style="line-height: 1px;">
                         <h3 id="Nom">Maison Du Pain</h3>
-                        <p class="fw-semibold" style="font-size: 12px;">Boulangerie Au Gout Authentique</p>
+                        <p class="Nom-txt fw-semibold" style="font-size: 12px;">Boulangerie Au Goût Authentique</p>
                     </div>
                 </div>
             </a>
@@ -34,7 +36,7 @@
                 </ul>
             </div>
             <!-- Menu Hamburger et iconPanier  -->
-            <div class="d-flex align-items-center gap-3">
+            <div class="panier_commande d-flex align-items-center gap-3">
                 <div class="d-flex align-content-center gap-4">
                     <a href="commande.html" class="nav-link"><i class="bi bi-cart3 fs-3"></i></a>
                     <a href="commande.html" class= "btn text-white fw-semibold d-none d-lg-block" style="background-color:maroon;">Commander</a>
@@ -46,7 +48,7 @@
             </div>
         </nav>
         <!-- Liens de Naviguation au Mobile  -->
-        <div class="collapse d-lg-none w-100" id="menuMobile">
+        <div class="nav-collapse collapse bg-warning-subtle d-lg-none w-100" id="menuMobile">
             <div class="py-3 px-4">
                 <ul class="list-unstyled mb-3">
                     <li class="mb-2"><a href="index.html" class="nav-link active border-bottom border-1 border-dark fs-2 w-25 text-uppercase">Accueil</a></li>
@@ -59,6 +61,21 @@
             </div>
         </div>
     </header>
+
+    <main>
+        <!-- section d'Accueil -->
+        <section id="img-hero">
+            <div class="text-hero p-4 p-lg-5">
+                <p class="slogan border border-2 border-warning fw-semibold bg-warning-subtle rounded-5">L’Excellence Boulangère au cœur de Dakar</p>
+                <h1 class="titre-hero mb-4">La Saveur au cœur de <span id="pain">chaque pain</span></h1> 
+                <p class="description text-white fs-5 mb-5">Chaque matin à Dakar, nos boulangers pétrissent à la main des farines nobles pour vous offrir baguettes croustillantes, viennoiseries dorées et pâtisseries d'exception.</p>
+                <div class="hero-btn d-flex flex-wrap gap-3">
+                    <a href="produits.html" class="btn btn-produits border border-1 fs-5 text-white fw-semibold">Découvrir Nos Produits</a>
+                    <a href="#visite" class="btn btn-visiter border border-1 fs-5 text-white fw-semibold">Visiter Notre Boulangerie</a>
+                </div>
+            </div>
+        </section>
+    </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>

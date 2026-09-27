@@ -12,7 +12,130 @@
 
 header{
     box-shadow: 2px 0px 6px black;
-    z-index: 1;
+    z-index: 10;
     position: sticky;
     top: 0;
+}
+
+#img-hero{
+    background:linear-gradient(-100deg,rgba(255, 166, 0, 0.493),rgba(0, 0, 0, 0.801)),url(images/hero-img.png) center/cover;
+    min-height: 89vh;
+}
+
+.slogan{
+    width: fit-content;
+    max-width: 100%;
+    text-align: center;
+    padding: 2px 18px;
+}
+
+.titre-hero{
+    font-size: 70px;
+    font-family: "Goldman", sans-serif;
+    font-weight: bold;
+    max-width:580px;
+    color: white;
+    text-transform: uppercase;
+}
+
+#pain{
+    color: gold;
+    font-style: italic;
+    font-size: 1em;
+}
+
+.description{
+    max-width: 590px;
+}
+
+.btn-produits{
+    background-color: maroon;
+}
+
+.btn-visiter{
+    background-color: rgba(255, 255, 255, 0.144);
+}
+
+/* AU MOBILE */
+
+@media (max-width: 576px){
+
+    .barnav{
+        padding: 10px 15px !important;
+    }
+
+    #img-hero{
+        min-height: 80vh;
+        background-position: 80% center;
+    }
+
+    .titre-hero{
+        max-width: 300px;
+        font-size: 2.3rem;
+    }
+
+    .slogan{
+        font-size: 0.8rem;
+    }
+
+    .description{
+        font-size: 1.2rem !important;
+        max-width: 330px;
+    }
+
+    .hero-btn{
+        flex-direction: column;
+    }
+
+}
+
+/* AU PETIT ECRAN */
+
+@media (max-width: 360px){
+
+    .barnav{
+        padding: 3px 5px !important;
+    }
+
+    #Nom{
+        font-size: 18px !important;
+    }
+
+    .Nom-txt{
+        font-size: 8px !important;
+    }
+
+    #img-hero{
+        background-position: 65% center;
+        min-height: 100vh;
+    }
+
+    .titre-hero{
+        max-width: 200px;
+        font-size: 1.5rem;
+    }
+
+    .slogan{
+        font-size: 0.6rem;
+        padding:0px 7px;
+    }
+
+    .description{
+        font-size: 0.8rem !important;
+        max-width: 100%;
+    }
+
+    .hero-btn{
+        flex-direction: column;
+    }
+
+    .hero-btn .btn{
+        font-size: 12px !important;
+    }
+
+    .logo{
+        height: 40px !important;
+        padding:0px 5px;
+    }
+    
 }
