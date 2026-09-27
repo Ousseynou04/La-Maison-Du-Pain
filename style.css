@@ -4,69 +4,88 @@
     box-sizing: border-box;
 }
 
-#Nom{
-    font-family:cursive; 
-    color:brown; 
-    font-weight: 700;
-}
+    #Nom{
+        font-family:cursive; 
+        color:brown; 
+        font-weight: 700;
+    }
 
-header{
-    box-shadow: 2px 0px 6px black;
-    z-index: 10;
-    position: sticky;
-    top: 0;
-}
+    header{
+        box-shadow: 2px 0px 6px black;
+        z-index: 10;
+        position: sticky;
+        top: 0;
+    }
 
-#img-hero{
-    background:linear-gradient(-100deg,rgba(255, 166, 0, 0.493),rgba(0, 0, 0, 0.801)),url(images/hero-img.png) center/cover;
-    min-height: 89vh;
-}
+    .nav-link.active{
+        border-bottom: 1px solid black;
+        width: fit-content;
+    }
 
-.slogan{
-    width: fit-content;
-    max-width: 100%;
-    text-align: center;
-    padding: 2px 18px;
-}
+    .nav-collapse{
+        position: absolute;
+        z-index: 20;
+    }
 
-.titre-hero{
-    font-size: 70px;
-    font-family: "Goldman", sans-serif;
-    font-weight: bold;
-    max-width:580px;
-    color: white;
-    text-transform: uppercase;
-}
+/* Section d'Accueil */
+    #img-hero{
+        background:linear-gradient(-100deg,rgba(255, 166, 0, 0.493),rgba(0, 0, 0, 0.801)),url(images/hero-img.png) center/cover;
+        background-attachment:fixed;
+        min-height: 89vh;
+    }
 
-#pain{
-    color: gold;
-    font-style: italic;
-    font-size: 1em;
-}
+    .slogan{
+        width: fit-content;
+        max-width: 100%;
+        text-align: center;
+        padding: 2px 18px;
+    }
 
-.description{
-    max-width: 590px;
-}
+    .titre-hero{
+        font-size: 70px;
+        font-family: "Goldman", sans-serif;
+        font-weight: bold;
+        max-width:580px;
+        color: white;
+        text-transform: uppercase;
+    }
 
-.btn-produits{
-    background-color: maroon;
-}
+    #pain{
+        color: gold;
+        font-style: italic;
+        font-size: 1em;
+    }
 
-.btn-visiter{
-    background-color: rgba(255, 255, 255, 0.144);
-}
+    .description{
+        max-width: 590px;
+    }
+
+    .btn-produits{
+        background-color: maroon;
+    }
+
+    .btn-visiter{
+        background-color: rgba(255, 255, 255, 0.144);
+    }
 
 /* AU MOBILE */
-
 @media (max-width: 576px){
 
     .barnav{
-        padding: 10px 15px !important;
+        padding: 8px 0px 0px 20px !important;
     }
 
     #img-hero{
         min-height: 80vh;
         background-position: 80% center;
+    }
+
+    #Nom{
+        font-size: 25px !important;
+    }
+
+    .Nom-txt{
+        font-size: 10px !important;
     }
 
     .titre-hero{
@@ -90,11 +109,14 @@ header{
 }
 
 /* AU PETIT ECRAN */
-
 @media (max-width: 360px){
 
     .barnav{
-        padding: 3px 5px !important;
+        padding: 8px 0px 0px 20px !important;
+    }
+
+    .NameBrand{
+        padding-top: 5px;
     }
 
     #Nom{
@@ -130,12 +152,12 @@ header{
     }
 
     .hero-btn .btn{
-        font-size: 12px !important;
+        font-size: 18px !important;
     }
 
     .logo{
-        height: 40px !important;
-        padding:0px 5px;
+        height: 42px !important;
+        padding: 8px 0px 0px 10px !important;
     }
-    
+
 }
