@@ -68,6 +68,14 @@
         background-color: rgba(255, 255, 255, 0.144);
     }
 
+    /* section presentation */
+    .present-titre{
+        font-family: "Satisfy", cursive;
+        font-size: 3rem;
+        font-weight: 650;
+        color: brown;
+    }
+
 /* AU MOBILE */
 @media (max-width: 576px){
 
@@ -104,6 +112,11 @@
 
     .hero-btn{
         flex-direction: column;
+    }
+
+    /* section presentation */
+    .services .service{
+        width: 100%;
     }
 
 }
@@ -158,6 +171,14 @@
     .logo{
         height: 42px !important;
         padding: 8px 0px 0px 10px !important;
+    }
+    /* section presentation */
+    .present-titre{
+        font-size: 34px !important;
+    }
+
+    .text-present{
+        font-size: 15px !important;
     }
 
 }
