@@ -75,6 +75,18 @@
         font-weight: 650;
         color: brown;
     }
+    /* section produits favoris  */
+    .card-title{
+        font-family: "Edu QLD Hand", cursive;
+    }
+
+    .price{
+        font-family: "Cormorant Garamond", serif;
+    }
+
+    .fav-titre{
+        font-family: "Literata", serif;
+    }
 
 /* AU MOBILE */
 @media (max-width: 576px){
@@ -118,6 +130,8 @@
     .services .service{
         width: 100%;
     }
+
+    
 
 }
 
@@ -179,6 +193,11 @@
 
     .text-present{
         font-size: 15px !important;
+    }
+
+    /* section produits favoris  */
+    .fav-titre{
+        font-size: 22px !important;
     }
 
 }
