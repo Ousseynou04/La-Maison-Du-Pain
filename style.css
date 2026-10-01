@@ -68,7 +68,7 @@
         background-color: rgba(255, 255, 255, 0.144);
     }
 
-    /* section presentation */
+    /* section produits et services */
     .present-titre{
         font-family: "Satisfy", cursive;
         font-size: 3rem;
@@ -88,7 +88,32 @@
         font-family: "Literata", serif;
     }
 
-/* AU MOBILE */
+    .card,.card-img-top{
+        overflow: hidden;
+        transition: 0.3s ease-in-out;
+    }
+
+    .card:hover{
+        transform: translateY(-10px);
+        box-shadow: 0px 0px 8px yellow;
+    }
+
+    .card:hover .card-img-top{
+        transform:scale(1.05);
+    }
+
+    .produit-category{
+        z-index: 2;
+    }
+
+    /* section savoir-Faire */
+    .info-savoir{
+        background-color: maroon;
+        width: 340px;
+        margin: 323px 120px;
+    }
+
+/* AUX MOBILES */
 @media (max-width: 576px){
 
     .barnav{
@@ -96,8 +121,8 @@
     }
 
     #img-hero{
-        min-height: 80vh;
-        background-position: 80% center;
+        min-height: 75vh;
+        background-position: 80% bottom;
     }
 
     #Nom{
@@ -126,16 +151,13 @@
         flex-direction: column;
     }
 
-    /* section presentation */
-    .services .service{
+    /* section produits et services */
+    .atouts .atout{
         width: 100%;
     }
-
-    
-
 }
 
-/* AU PETIT ECRAN */
+/* AUX PETITS ECRANS */
 @media (max-width: 360px){
 
     .barnav{
@@ -155,8 +177,8 @@
     }
 
     #img-hero{
-        background-position: 65% center;
-        min-height: 100vh;
+        background-position: 65% bottom;
+        min-height: 75vh;
     }
 
     .titre-hero{
@@ -186,7 +208,7 @@
         height: 42px !important;
         padding: 8px 0px 0px 10px !important;
     }
-    /* section presentation */
+    /* section produits et services */
     .present-titre{
         font-size: 34px !important;
     }
@@ -199,5 +221,4 @@
     .fav-titre{
         font-size: 22px !important;
     }
-
 }

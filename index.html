@@ -72,36 +72,37 @@
                 <p class="slogan border border-2 border-warning fw-semibold bg-warning-subtle rounded-5">L’Excellence Boulangère au cœur de Dakar</p>
                 <h1 class="titre-hero mb-4">La Saveur au cœur de <span id="pain">chaque pain</span></h1> 
                 <p class="description text-white fs-5 mb-5">Chaque matin à Dakar, nos boulangers pétrissent à la main des farines nobles pour vous offrir baguettes croustillantes, viennoiseries dorées et pâtisseries d'exception.</p>
+                <!-- Conteneur des Btn CTA  -->
                 <div class="hero-btn d-flex flex-wrap gap-3">
                     <a href="produits.html" class="btn btn-produits border border-1 fs-5 text-white fw-semibold">Découvrir Nos Produits</a>
                     <a href="#visite" class="btn btn-visiter border border-1 fs-5 text-white fw-semibold">Visiter Notre Boulangerie</a>
                 </div>
             </div>
         </section>
-        <!-- section Presentation -->
+        <!-- section de Presentation des produits et services de la Boulangerie -->
         <section id="section-present">
             <div class="container-fluid mt-4 p-4 p-lg-5 d-flex flex-column flex-lg-row gap-4 align-items-center">
                 <div class="w-100">
                     <p class="fs-3 fw-light text-warning"><i class="bi bi-stars"></i> L'univers de la Boulangerie</p>
                     <h2 class="present-titre mb-3">Le goût brut de la Nature , façonné par un artisan Passioné</h2>
                     <p class="text-present fs-5 mb-3">Découvrez notre savoir-faire authentique à travers nos pains dorés, nos viennoiseries croustillantes et nos pâtisseries gourmandes. Le plaisir simple du vrai goût, chaque jour.</p>
-                    <div class="services d-flex flex-wrap gap-2">
-                        <div class="service border border-1 rounded-3 p-2 d-flex gap-2 align-items-center"><i class="bi bi-award fs-5 bg-warning-subtle rounded-5 px-2 py-1"></i><span class="fw-semibold">Qualité Artisanale</span></div>
-                        <div class="service border border-1 rounded-3 p-2 d-flex gap-2 align-items-center"><i class="bi bi-leaf fs-5 bg-warning-subtle rounded-5 px-2 py-1"></i><span class="fw-semibold">Ingrédient Frais</span></div>
-                        <div class="service border border-1 rounded-3 p-2 d-flex gap-2 align-items-center"><i class="bi bi-suit-heart fs-5 bg-warning-subtle rounded-5 px-2 py-1"></i><span class="fw-semibold">Fait avec Passion</span></div>
+                    <div class="atouts d-flex flex-wrap gap-2">
+                        <div class="atout border border-1 rounded-3 p-2 d-flex gap-2 align-items-center"><i class="bi bi-award fs-5 bg-warning-subtle rounded-5 px-2 py-1"></i><span class="fw-semibold">Qualité Artisanale</span></div>
+                        <div class="atout border border-1 rounded-3 p-2 d-flex gap-2 align-items-center"><i class="bi bi-leaf fs-5 bg-warning-subtle rounded-5 px-2 py-1"></i><span class="fw-semibold">Ingrédient Frais</span></div>
+                        <div class="atout border border-1 rounded-3 p-2 d-flex gap-2 align-items-center"><i class="bi bi-suit-heart fs-5 bg-warning-subtle rounded-5 px-2 py-1"></i><span class="fw-semibold">Fait avec Passion</span></div>
                     </div>
                 </div>
-
+                <!-- conteneur des differents types de produits -->
                 <div class="d-flex flex-column w-100 gap-2">
                     <div class="d-flex flex-lg-row flex-column gap-2 w-100">
-                        <div class="w-100 img_pain"><img class="rounded-3 w-100 object-fit-cover" src="./images/type-patisserie.png" alt="patisseries" style="height: 250px;"></div>
-                        <div class="w-100 img_viennoiserie"><img class="rounded-3 w-100 object-fit-cover" src="./images/type-viennoiserie.png" alt="viennoiseries" style="height: 250px;"></div>
+                        <div class="w-100 img_pain"><img class="rounded-3 w-100 object-fit-cover" src="./images/type-patisserie.png" title="Patisserie" alt="patisseries" style="height: 250px;"></div>
+                        <div class="w-100 img_viennoiserie"><img class="rounded-3 w-100 object-fit-cover" src="./images/type-viennoiserie.png" title="viennoiserie" alt="viennoiseries" style="height: 250px;"></div>
                     </div>
-                    <div class="w-100 img_patisserie"><img class="rounded-3 w-100 object-fit-cover" src="./images/type-pain.jpg" alt="pains" style="height: 250px;"></div>
+                    <div class="w-100 img_patisserie"><img class="rounded-3 w-100 object-fit-cover" src="./images/type-pain.jpg" alt="pains" title="Pain" style="height: 250px;"></div>
                 </div>
             </div>
         </section>
-
+        <!-- Section de Presentation des Produits Favoris -->
         <section id="produits_Phares">
             <div class="container-fluid p-lg-5 p-4">
                 <div class="container-fluid d-flex justify-content-between align-items-center flex-lg-row flex-column">
@@ -112,63 +113,105 @@
                     </div>
                     <a href="produits.html" class="text-decoration-none text-warning fs-5">Voir tous nos produits  <i class="bi bi-arrow-right"></i> </a>
                 </div>
-
+                <!-- conteneur des produits favoris de la boulangerie -->
                 <div class="produits row g-3 py-4">
+                    <!-- 1er produit favori -->
                     <div class="col-12 col-md-6 col-xl-3">
-                        <div class="card h-100">
-                            <img src="./images/fav-baguette-traditionnelle.png" class="card-img-top object-fit-cover" height="280" alt="...">
+                        <div class="card h-100 position-relative">
+                            <p class="produit-category position-absolute mt-3 ms-2 border border-1 border-warning bg-light rounded-5 px-3">Pain</p>
+                            <img src="./images/fav-baguette-traditionnelle.png" class="card-img-top object-fit-cover" height="200" alt="baguette-traditionnelle">
                             <div class="card-body">
                                 <h5 class="card-title">Baguette Traditionnelle</h5>
                                 <p class="card-text">Croustillante à l'extérieur, moelleuse à l'intérieur, cuite chaque matin selon la tradition française.</p>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <p class="price mt-3 fs-3 fw-semibold">150 Fcfa</p>
-                                    <a href="commande.html" class= "btn text-white fw-semibold" style="background-color:maroon;">Commander</a>
+                                    <p class="price mt-3 fs-4 fw-semibold">Prix 150 Fcfa</p>
+                                    <a href="commande.html" class= "btn text-white fw-semibold" style="background-color:maroon;"><i class="bi bi-cart-plus"></i> acheter</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-
+                    <!-- 2eme produit favori -->
                     <div class="col-12 col-md-6 col-xl-3">
-                        <div class="card h-100">
-                            <img src="./images/fav-croissant-chocolaté.png" class="card-img-top object-fit-cover" height="280" alt="...">
+                        <div class="card h-100 position-relative">
+                            <p class="produit-category position-absolute mt-3 ms-2 border border-1 border-warning bg-light rounded-5 px-3">viennoiserie</p>
+                            <img src="./images/fav-croissant-chocolaté.png" class="card-img-top object-fit-cover" height="200" alt="Croissant-chocolaté">
                             <div class="card-body">
                                 <h5 class="card-title">Croissant-chocolaté</h5>
                                 <p class="card-text"> Un croissant croustillant et délicatement garni de chocolat fondant.</p>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <p class="price mt-3 fs-3 fw-semibold">450 Fcfa</p>
-                                    <a href="commande.html" class= "btn text-white fw-semibold" style="background-color:maroon;">Commander</a>
+                                    <p class="price mt-3 fs-4 fw-semibold">Prix 450 Fcfa</p>
+                                    <a href="commande.html" class= "btn text-white fw-semibold" style="background-color:maroon;"><i class="bi bi-cart-plus"></i> acheter</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-
+                    <!-- 3eme produit favori -->
                     <div class="col-12 col-md-6 col-xl-3">
-                        <div class="card h-100">
-                            <img src="./images/fav-pain-au-levain.png" class="card-img-top object-fit-cover" height="280" alt="...">
+                        <div class="card h-100 position-relative">
+                            <p class="produit-category position-absolute mt-3 ms-2 border border-1 border-warning bg-light rounded-5 px-3">Pain</p>
+                            <img src="./images/fav-pain-au-levain.png" class="card-img-top object-fit-cover" height="200" alt="pain-au-levain">
                             <div class="card-body">
                                 <h5 class="card-title">Pain au Levain</h5>
                                 <p class="card-text">Un pain savoureux à la mie généreuse, préparé avec un levain naturel.</p>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <p class="price mt-3 fs-3 fw-semibold">2500 Fcfa</p>
-                                    <a href="commande.html" class= "btn text-white fw-semibold" style="background-color:maroon;">Commander</a>
+                                    <p class="price mt-3 fs-4 fw-semibold">Prix 2500 Fcfa</p>
+                                    <a href="commande.html" class= "btn text-white fw-semibold" style="background-color:maroon;"><i class="bi bi-cart-plus"></i> acheter</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-
+                    <!-- 4eme produit favori -->
                     <div class="col-12 col-md-6 col-xl-3">
-                        <div class="card h-100">
-                            <img src="./images/fav-mille-feuille.png" class="card-img-top object-fit-cover" height="280" alt="...">
+                        <div class="card h-100 position-relative">
+                            <p class="produit-category position-absolute mt-3 ms-2 border border-1 border-warning bg-light rounded-5 px-3">Pâtisserie</p>
+                            <img src="./images/fav-mille-feuille.png" class="card-img-top object-fit-cover" height="200" alt="Mille-Feuille">
                             <div class="card-body">
                                 <h5 class="card-title">Mille-Feuille</h5>
                                 <p class="card-text">De fines couches de pâte feuilletée accompagnées d'une crème pâtissière onctueuse.</p>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <p class="price mt-3 fs-3 fw-semibold">3500 Fcfa</p>
-                                    <a href="commande.html" class= "btn text-white fw-semibold" style="background-color:maroon;">Commander</a>
+                                    <p class="price mt-3 fs-4 fw-semibold">Prix 3500 Fcfa</p>
+                                    <a href="commande.html" class= "btn text-white fw-semibold" style="background-color:maroon;"><i class="bi bi-cart-plus"></i> acheter</a>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+        <!-- section de presentation du Savoir-Faire de la Boulangerie -->
+        <section>
+            <div class="container-fluid d-flex flex-column flex-lg-row gap-5 bg-warning-subtle p-lg-5 p-4">
+                <div class="w-100">
+                    <div class="position-relative">
+                        <div class="info-savoir position-absolute d-xl-block d-none border border-2 rounded-3 border-warning px-3">
+                            <p class="titre-info text-warning fw-bold fs-5">"Le secret reside dans le temps"</p>
+                            <p class="info-desc text-white">Des préparations réalisées chaque jour avec précision par nos boulangers à Dakar.</p>
+                        </div>
+                        <img src="./images/petrissage.png" class="w-100 rounded-3" alt="petrissage à la main">
+                    </div>
+                </div>
+
+                <div class="w-100">
+                    <p class="text-warning fw-semibold fs-5">savoir-Faire & Passion</p>
+                    <h3 class="fs-1 fw-bold">Chaque matin, la magie opère dès 06h00</h3>
+                    <p>
+                        Fondée à Dakar, Maison du Pain perpétue l'art de la boulangerie traditionnelle. Nous refusons les farines pré-mélangées et les additifs industriels. 
+                        De la mise en pâte au façonnage à la main jusqu'à la cuisson sur sole de pierre, chaque étape est maîtrisée avec rigueur.
+                    </p>
+
+                    <div class="d-flex flex-column flex-lg-row gap-2 mb-5">
+                        <div class="bg-light rounded-3 border w-100 pt-3 px-3 text-center">
+                            <h5 class="text-warning fw-bold">100%</h5>
+                            <p class="fw-semibold">Qualité Premium</p>
+                        </div>
+
+                        <div class="bg-light rounded-3 border w-100 pt-3 px-3 text-center">
+                            <h5 class="text-warning fw-bold">0%</h5>
+                            <p class="fw-semibold">conservateurs industriels</p>
+                        </div>
+                    </div>
+                    <!-- Btn CTA / Histoire -->
+                    <a href="about.html" class="btn text-white fw-semibold" style="background-color:maroon;">Notre Histoire <i class="bi bi-arrow-right"></i></a>
                 </div>
             </div>
         </section>
