@@ -122,6 +122,11 @@
     .infos-utiles{
         box-shadow: 0px 0px 5px 0px black;
     }
+    
+/* section footer */
+    footer{
+        background:linear-gradient(850deg, rgba(255, 232, 190, 0.733), rgba(128, 0, 0, 0.952));
+    }
 
 /* AUX MOBILES */
 @media (max-width: 576px){
