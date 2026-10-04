@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+/* Barre de naviguation */
     #Nom{
         font-family:cursive; 
         color:brown; 
@@ -68,14 +69,14 @@
         background-color: rgba(255, 255, 255, 0.144);
     }
 
-    /* section produits et services */
+/* section produits et services */
     .present-titre{
         font-family: "Satisfy", cursive;
         font-size: 3rem;
         font-weight: 650;
         color: brown;
     }
-    /* section produits favoris  */
+/* section produits favoris  */
     .card-title{
         font-family: "Edu QLD Hand", cursive;
     }
@@ -106,18 +107,28 @@
         z-index: 2;
     }
 
-    /* section savoir-Faire */
+/* section savoir-Faire */
     .info-savoir{
         background-color: maroon;
         width: 340px;
         margin: 323px 120px;
     }
 
+/* section info-utiles */
+    .visiter-map {
+    height: 400px;
+    }
+
+    .infos-utiles{
+        box-shadow: 0px 0px 5px 0px black;
+    }
+
 /* AUX MOBILES */
 @media (max-width: 576px){
 
+/* barre de naviguation  */
     .barnav{
-        padding: 8px 0px 0px 20px !important;
+        padding: 8px 10px 0px 20px !important;
     }
 
     #img-hero{
@@ -151,17 +162,23 @@
         flex-direction: column;
     }
 
-    /* section produits et services */
+/* section produits et services */
     .atouts .atout{
         width: 100%;
+    }
+
+/* section info-utiles */
+    .visiter-map {
+    height: 240px;
     }
 }
 
 /* AUX PETITS ECRANS */
 @media (max-width: 360px){
 
+/* Barre de naviguation */
     .barnav{
-        padding: 8px 0px 0px 20px !important;
+        padding: 8px 10px 0px 10px !important;
     }
 
     .NameBrand{
@@ -208,7 +225,7 @@
         height: 42px !important;
         padding: 8px 0px 0px 10px !important;
     }
-    /* section produits et services */
+/* section produits et services */
     .present-titre{
         font-size: 34px !important;
     }
@@ -217,8 +234,13 @@
         font-size: 15px !important;
     }
 
-    /* section produits favoris  */
+/* section produits favoris  */
     .fav-titre{
         font-size: 22px !important;
+    }
+
+/* section info-utiles */
+    .visiter-map {
+    height: 190px;
     }
 }
