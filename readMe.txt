@@ -8,3 +8,4 @@ creation complete de la section de presentation du savoir-faire de la Boulangeri
 creation complete de la section des Avis clients : 01/10/2026
 creation complete de la section des informations utiles de la Boulangerie : 04/10/2026
 creation complete de la section footer : 04/10/2026
+finalisation de la page index : 05/10/2026
