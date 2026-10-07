@@ -6,14 +6,17 @@
     <title>Maison du Pain — Produits</title>
     <link rel="icon" type="image/png" href="/images/logo_maison_du_pain.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
+    <header class="bg-warning-subtle">
         <!-- Barre de Naviguation -->
-        <nav class="barnav container-fluid px-lg-5 px-4 d-flex justify-content-between align-items-center pt-3 bg-warning-subtle">
+        <nav class="barnav page-container px-lg-5 px-4 d-flex justify-content-between align-items-center pt-3">
             <!-- partie du logo + nom  -->
             <a href="index.html" class="text-decoration-none text-dark">
                 <div class="d-flex gap-3">
@@ -59,6 +62,392 @@
             </div>
         </div>
     </header>
+    
+    <main>
+        <section>
+            <div class="bg-produits container-fluid p-lg-5 p-4 text-center">
+                <div class="container p-lg-5 p-3">
+                    <span class="fw-bold text-warning fs-5">Nos délices</span>
+                    <h2 class="titre-produits text-white fw-semibold">Découvrez l’univers de nos saveurs</h2>
+                    <p class="description-produit text-white fs-5 px-lg-5 py-lg-3">Laissez-vous séduire par des créations imaginées avec passion et façonnées avec soin. Chaque recette reflète notre exigence, 
+                    notre savoir-faire et notre attachement au goût authentique.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section de Presentation des Produits -->
+        <section>
+            <div class="page-container p-lg-5 p-4">
+                <!-- conteneur de la barre de recherche des categories de produits -->
+                <div class="row g-3 p-5 rounded-3" style="background-color: maroon;">
+                    <!-- les types de produits -->
+                    <div class="d-flex flex-wrap justify-content-center gap-4 col-12 col-lg-8">
+                        <div><span class="btn btn-warning rounded-5">Tous les produits</span></div>
+                        <div><span class="btn btn-light rounded-5">Pains</span></div>
+                        <div><span class="btn btn-light rounded-5">Viennoiseries</span></div>
+                        <div><span class="btn btn-light rounded-5">Pâtisseries</span></div>
+                        <div><span class="btn btn-light rounded-5">Produits Salés</span></div>
+                    </div>
+                    <!-- Barre de recherche des produits -->
+                    <div class="col-12 col-lg-4 position-relative">
+                        <i class="bi bi-search position-absolute mt-1 px-2"></i>
+                        <input type="text" class="px-5 w-100 py-1 rounded border" name="produit" id="produit" placeholder="Rechercher un produit....">
+                    </div>
+                </div>
+                <!-- Conteneur principal : titre + produits -->
+                <div class="carte-produits">
+                    <!-- Titre -->
+                    <div class="titre-carte py-5">
+                        <p class="text-center fw-bold">“ Carte de nos Produits ”</p>
+                    </div>
+                    <!-- Conteneur qui enveloppe toutes les catégories  de produits -->
+                    <div class="categories-produits">
+                        <!-- Catégorie : Pain -->
+                        <div class="categorie categorie-pain mb-4">
+                            <h3 class="titre-categorie fw-bold mb-3 text-warning">Pains</h3>
+                            <div class="produits row g-3">
+                                <!-- 1er Produit : Pain -->
+                                <article class="col-12 col-md-6 col-xl-3">
+                                    <div class="card h-100 position-relative">
+                                        <p class="produit-category position-absolute mt-3 ms-2 border border-1 border-warning bg-light rounded-5 px-3">Pain</p>
+                                        <img src="./images/fav-baguette-traditionnelle.png" class="card-img-top object-fit-cover" height="200" alt="Baguette traditionnelle">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Baguette Traditionnelle</h5>
+                                            <p class="card-text">Croustillante à l'extérieur, moelleuse à l'intérieur, cuite chaque matin selon les règles artisanales.</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <p class="price mt-3 fs-4 fw-semibold">150 Fcfa</p>
+                                                <a href="commande.html" class="btn text-white fw-semibold" style="background-color:maroon;"><i class="bi bi-cart-plus"></i> acheter</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                                <!-- 2eme Produit : Pain -->
+                                <article class="col-12 col-md-6 col-xl-3">
+                                    <div class="card h-100 position-relative">
+                                        <p class="produit-category position-absolute mt-3 ms-2 border border-1 border-warning bg-light rounded-5 px-3">Pain</p>
+                                        <img src="./images/p-pain-de-mie.png" class="card-img-top object-fit-cover" height="200" alt="Pain de mie">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Pain de Mie</h5>
+                                            <p class="card-text">Un pain moelleux et légèrement doré, à la mie tendre et douce, idéal pour les tartines et petits-déjeuners.</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <p class="price mt-3 fs-4 fw-semibold">1000 Fcfa</p>
+                                                <a href="commande.html" class="btn text-white fw-semibold" style="background-color:maroon;"><i class="bi bi-cart-plus"></i> acheter</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                                <!-- 3eme Produit : Pain -->
+                                <article class="col-12 col-md-6 col-xl-3">
+                                    <div class="card h-100 position-relative">
+                                        <p class="produit-category position-absolute mt-3 ms-2 border border-1 border-warning bg-light rounded-5 px-3">Pain</p>
+                                        <img src="./images/p-brioche.png" class="card-img-top object-fit-cover" height="200" alt="Brioche">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Brioche</h5>
+                                            <p class="card-text">Une brioche douce et légèrement sucrée, à la texture légère. Idéale pour les pauses gourmandes.</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <p class="price mt-3 fs-4 fw-semibold">500 Fcfa</p>
+                                                <a href="commande.html" class="btn text-white fw-semibold" style="background-color:maroon;"><i class="bi bi-cart-plus"></i> acheter</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                                <!-- 4eme Produit : Pain -->
+                                <article class="col-12 col-md-6 col-xl-3">
+                                    <div class="card h-100 position-relative">
+                                        <p class="produit-category position-absolute mt-3 ms-2 border border-1 border-warning bg-light rounded-5 px-3">Pain</p>
+                                        <img src="./images/fav-pain-au-levain.png" class="card-img-top object-fit-cover" height="200" alt="Pain au levain">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Pain au levain</h5>
+                                            <p class="card-text">Un pain savoureux à la mie généreuse, préparé avec un levain naturel.</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <p class="price mt-3 fs-4 fw-semibold">1500 Fcfa</p>
+                                                <a href="commande.html" class="btn text-white fw-semibold" style="background-color:maroon;"><i class="bi bi-cart-plus"></i> acheter</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <!-- Catégorie : Viennoiserie -->
+                        <div class="categorie categorie-viennoiserie mb-4">
+                            <h3 class="titre-categorie fw-bold mb-3 text-warning">Viennoiseries</h3>
+                            <div class="produits row g-3">
+                                <!-- 1er Produit : Viennoiserie -->
+                                <article class="col-12 col-md-6 col-xl-3">
+                                    <div class="card h-100 position-relative">
+                                        <p class="produit-category position-absolute mt-3 ms-2 border border-1 border-warning bg-light rounded-5 px-3">Viennoiserie</p>
+                                        <img src="./images/vn-drop-au-chocolat.png" class="card-img-top object-fit-cover" height="200" alt="Drop au chocolat">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Drop Au Chocolat</h5>
+                                            <p class="card-text">Une gourmandise tendre et chocolatée, parfaite pour combler les petites envies sucrées.</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <p class="price mt-3 fs-4 fw-semibold">600 Fcfa</p>
+                                                <a href="commande.html" class="btn text-white fw-semibold" style="background-color:maroon;"><i class="bi bi-cart-plus"></i> acheter</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                                <!-- 2eme Produit : Viennoiserie -->
+                                <article class="col-12 col-md-6 col-xl-3">
+                                    <div class="card h-100 position-relative">
+                                        <p class="produit-category position-absolute mt-3 ms-2 border border-1 border-warning bg-light rounded-5 px-3">Viennoiserie</p>
+                                        <img src="./images/vn-pain-au-chocolat-&-amande.png" class="card-img-top object-fit-cover" height="200" alt="Pain au chocolat et amande">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Pain au chocolat & amande</h5>
+                                            <p class="card-text">Une viennoiserie croustillante, associant un cœur chocolaté à la douceur des amandes.</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <p class="price mt-3 fs-4 fw-semibold">650 Fcfa</p>
+                                                <a href="commande.html" class="btn text-white fw-semibold" style="background-color:maroon;"><i class="bi bi-cart-plus"></i> acheter</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                                <!-- 3eme Produit : Viennoiserie -->
+                                <article class="col-12 col-md-6 col-xl-3">
+                                    <div class="card h-100 position-relative">
+                                        <p class="produit-category position-absolute mt-3 ms-2 border border-1 border-warning bg-light rounded-5 px-3">Viennoiserie</p>
+                                        <img src="./images/fav-croissant-chocolaté.png" class="card-img-top object-fit-cover" height="200" alt="Croissant chocolaté">
+                                        <div class="card-body">
+                                            <h5 class="card-title"> Croissant-chocolaté</h5>
+                                            <p class="card-text">Un croissant croustillant et délicatement garni de chocolat fondant.</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <p class="price mt-3 fs-4 fw-semibold">400 Fcfa</p>
+                                                <a href="commande.html" class="btn text-white fw-semibold" style="background-color:maroon;"><i class="bi bi-cart-plus"></i> acheter</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                                <!-- 4eme Produit : Viennoiserie -->
+                                <article class="col-12 col-md-6 col-xl-3">
+                                    <div class="card h-100 position-relative">
+                                        <p class="produit-category position-absolute mt-3 ms-2 border border-1 border-warning bg-light rounded-5 px-3">Viennoiserie</p>
+                                        <img src="./images/vn-pain-au-chocolat-praliné.png" class="card-img-top object-fit-cover" height="200" alt="Pain au chocolat praliné">
+                                        <div class="card-body">
+                                            <h5 class="card-title">pain au chocolat praliné</h5>
+                                            <p class="card-text">Un feuilleté doré aux notes de praliné et de chocolat, une texture délicate et une saveur gourmande.</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <p class="price mt-3 fs-4 fw-semibold">750 Fcfa</p>
+                                                <a href="commande.html" class="btn text-white fw-semibold" style="background-color:maroon;"><i class="bi bi-cart-plus"></i> acheter</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <!-- Catégorie : Pâtisserie -->
+                        <div class="categorie categorie-patisserie mb-4">
+                            <h3 class="titre-categorie fw-bold mb-3 text-warning">Pâtisseries</h3>
+                            <div class="produits row g-3">
+                                <!-- 1er Produit : Pâtisserie -->
+                                <article class="col-12 col-md-6 col-xl-3">
+                                    <div class="card h-100 position-relative">
+                                        <p class="produit-category position-absolute mt-3 ms-2 border border-1 border-warning bg-light rounded-5 px-3">Pâtisserie</p>
+                                        <img src="./images/pati-Cheesecake.png" class="card-img-top object-fit-cover" height="200" alt="Cheesecake">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Cheesecake</h5>
+                                            <p class="card-text">Un dessert onctueux sur un lit de biscuits croustillants, sublimé par un délicieux coulis fruité.</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <p class="price mt-3 fs-4 fw-semibold">4500 Fcfa</p>
+                                                <a href="commande.html" class="btn text-white fw-semibold" style="background-color:maroon;"><i class="bi bi-cart-plus"></i> acheter</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                                <!-- 2eme Produit : Pâtisserie -->
+                                <article class="col-12 col-md-6 col-xl-3">
+                                    <div class="card h-100 position-relative">
+                                        <p class="produit-category position-absolute mt-3 ms-2 border border-1 border-warning bg-light rounded-5 px-3">Pâtisserie</p>
+                                        <img src="./images/fav-mille-feuille.png" class="card-img-top object-fit-cover" height="200" alt="Mille-feuille">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Mille-Feuille</h5>
+                                            <p class="card-text">De fines couches de pâte feuilletée accompagnées d'une crème pâtissière onctueuse.</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <p class="price mt-3 fs-4 fw-semibold"> 2000 Fcfa</p>
+                                                <a href="commande.html" class="btn text-white fw-semibold" style="background-color:maroon;"><i class="bi bi-cart-plus"></i> acheter</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                                <!-- 3eme Produit : Pâtisserie -->
+                                <article class="col-12 col-md-6 col-xl-3">
+                                    <div class="card h-100 position-relative">
+                                        <p class="produit-category position-absolute mt-3 ms-2 border border-1 border-warning bg-light rounded-5 px-3">Pâtisserie</p>
+                                        <img src="./images/pati-swiss-roll.png" class="card-img-top object-fit-cover" height="200" alt="Swiss roll">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Swiss-Roll</h5>
+                                            <p class="card-text">Une crème fondante ou de confiture fruitée, enroulé avec soin pour un équilibre parfait des saveurs.</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <p class="price mt-3 fs-4 fw-semibold">3500 Fcfa</p>
+                                                <a href="commande.html" class="btn text-white fw-semibold" style="background-color:maroon;"><i class="bi bi-cart-plus"></i> acheter</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                                <!-- 4eme Produit : Pâtisserie -->
+                                <article class="col-12 col-md-6 col-xl-3">
+                                    <div class="card h-100 position-relative">
+                                        <p class="produit-category position-absolute mt-3 ms-2 border border-1 border-warning bg-light rounded-5 px-3">Pâtisserie</p>
+                                        <img src="./images/pati-pate-à-choux.png" class="card-img-top object-fit-cover" height="200" alt="Pâte à choux">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Pâte à Choux</h5>
+                                            <p class="card-text">Une pâte légère et dorée, au cœur délicatement moelleux, parfaite pour des pâtisseries fines et gourmandes.</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <p class="price mt-3 fs-4 fw-semibold">350 Fcfa</p>
+                                                <a href="commande.html" class="btn text-white fw-semibold" style="background-color:maroon;"><i class="bi bi-cart-plus"></i> acheter</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <!-- Catégorie : Salé -->
+                        <div class="categorie categorie-salé">
+                            <h3 class="titre-categorie fw-bold mb-3 text-warning">Spécialités Salées</h3>
+                            <div class="produits row g-3">
+                                <!-- 1er Produit : Salé -->
+                                <article class="col-12 col-md-6 col-xl-3">
+                                    <div class="card h-100 position-relative">
+                                        <p class="produit-category position-absolute mt-3 ms-2 border border-1 border-warning bg-light rounded-5 px-3">Salé</p>
+                                        <img src="./images/salé-tourtes.png" class="card-img-top object-fit-cover" height="200" alt="Tourtes">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Tourtes</h5>
+                                            <p class="card-text">Une spécialité aux saveurs authentiques, préparée avec soin pour offrir un goût délicieux.</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <p class="price mt-3 fs-4 fw-semibold">7500 Fcfa</p>
+                                                <a href="commande.html" class="btn text-white fw-semibold" style="background-color:maroon;"><i class="bi bi-cart-plus"></i> acheter</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                                <!-- 2eme Produit : Salé -->
+                                <article class="col-12 col-md-6 col-xl-3">
+                                    <div class="card h-100 position-relative">
+                                        <p class="produit-category position-absolute mt-3 ms-2 border border-1 border-warning bg-light rounded-5 px-3">Salé</p>
+                                        <img src="./images/salé-quiche-lorraine.png" class="card-img-top object-fit-cover" height="200" alt="Quiche lorraine">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Quiche-Lorraine</h5>
+                                            <p class="card-text">Une tarte salée fondante, garnie d’une généreuse préparation aux œufs, fromage et lardons.</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <p class="price mt-3 fs-4 fw-semibold">4500 Fcfa</p>
+                                                <a href="commande.html" class="btn text-white fw-semibold" style="background-color:maroon;"><i class="bi bi-cart-plus"></i> acheter</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                                <!-- 3eme Produit : Salé -->
+                                <article class="col-12 col-md-6 col-xl-3">
+                                    <div class="card h-100 position-relative">
+                                        <p class="produit-category position-absolute mt-3 ms-2 border border-1 border-warning bg-light rounded-5 px-3">Salé</p>
+                                        <img src="./images/salé-margharita-focaccia.png" class="card-img-top object-fit-cover" height="200" alt="Margharita focaccia">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Margharita Focaccia</h5>
+                                            <p class="card-text">Plat italien moelleux et croustillant, garni de sauce tomate, mozzarella fondante et basilic frais.</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <p class="price mt-3 fs-4 fw-semibold">4000 Fcfa</p>
+                                                <a href="commande.html" class="btn text-white fw-semibold" style="background-color:maroon;"><i class="bi bi-cart-plus"></i> acheter</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                                <!-- 4eme Produit : Salé -->
+                                <article class="col-12 col-md-6 col-xl-3">
+                                    <div class="card h-100 position-relative">
+                                        <p class="produit-category position-absolute mt-3 ms-2 border border-1 border-warning bg-light rounded-5 px-3">Salé</p>
+                                        <img src="./images/salé-fougasse.png" class="card-img-top object-fit-cover" height="200" alt="Fougasse">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Fougasse</h5>
+                                            <p class="card-text">Pétrie à l’huile d’olive et parfumée aux herbes de Provence, elle dévoile des arômes généreux et savoureux.</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <p class="price mt-3 fs-4 fw-semibold">3500 Fcfa</p>
+                                                <a href="commande.html" class="btn text-white fw-semibold" style="background-color:maroon;"><i class="bi bi-cart-plus"></i> acheter</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="titre-fin pt-5 text-center"><p class="fs-1 fw-bold">Bonne Dégustation !</p></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="page-container p-lg-5 p-4">
+            <!-- conteneur du Pied de page -->
+            <div class="row g-5">
+                <!-- Bloc identité de la Boulangerie -->
+                <div class="col-12 col-lg-3">
+                    <a href="index.html" class="text-decoration-none text-dark">
+                        <div class="d-flex gap-3">
+                            <img src="images/logo_maison_du_pain.png" class="logo h-50" style="width: 2.5rem;" alt="logo">
+                            <div class="NameBrand" style="line-height: 1px;">
+                                <h4 id="Nom">Maison Du Pain</h4>
+                                <p class="Nom-txt fw-bold" style="font-size: 10px;">Boulangerie Au Goût Authentique</p>
+                            </div>
+                        </div>
+                    </a>
+                    <p class="fw-semibold">Du pain frais, des produits de qualité et tout le savoir-faire de notre Boulangerie, chaque Jour.</p>
+                </div>
+                <!-- Bloc Liens rapides -->
+                <div class="col-12 col-lg-3">
+                    <h5 style="color: maroon;">Navigation</h5>
+                    <ul class="list-unstyled fs-5">
+                        <li class="nav-item"><a href="index.html" class="nav-link nav-footer">Accueil</a></li>
+                        <li class="nav-item"><a href="produits.html" class="nav-link nav-footer">Produits</a></li>
+                        <li class="nav-item"><a href="about.html" class="nav-link nav-footer">À Propos</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link nav-footer">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- Bloc Coordonées -->
+                <div class="col-12 col-lg-3">
+                    <h5 class="text-white">Nous Contacter</h5>
+                    <div>
+                        <div class="rounded-3 d-flex gap-2">
+                            <div class="mt-2"><i class="bi bi-geo-alt text-warning rounded-5 fs-4"></i></div>
+                            <div>
+                                <span class="fw-bold">Dakar, Sénégal</span> 
+                                <p class="text-white">Plateau, Avenue Jean Jaurès </p>
+                            </div>
+                        </div>
+                        <div class="rounded-3 d-flex gap-2">
+                            <div class="mt-2"><i class="bi bi-telephone text-warning rounded-5 fs-4"></i></div>
+                            <div>
+                                <span class="fw-bold">+221 77 123 45 67</span>
+                                <p class="text-white">Tous les jours de 06h00 à 22h00</p>
+                            </div>
+                        </div>
+                        <div class="rounded-3 d-flex gap-2">
+                            <div class="mt-2"><i class="bi bi-envelope text-warning rounded-5 fs-4"></i></div>
+                            <div>
+                                <span class="fw-bold">LaMaisonDuPain@gmail.com</span> 
+                                <p class="text-white">On vous répond sous 24 h.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Bloc Reseaux Sociaux -->
+                <div class="col-12 col-lg-3">
+                    <h5 class="text-warning">Suivez-Nous</h5>
+                    <p class="text-white">Rejoignez notre Communauté sur les Réseaux Sociaux</p>
+                    <div class="d-flex gap-2">
+                        <div class="d-flex gap-3">
+                            <a href="facebook.com"><i class="bi bi-facebook text-warning"></i></a>
+                            <a href="instagram.com"><i class="bi bi-instagram text-warning"></i></a>
+                            <a href="tiktok.com"><i class="bi bi-tiktok text-warning"></i></a>
+                            <a href="youtube.com"><i class="bi bi-youtube text-warning"></i></a>
+                        </div>
+                        <div><p class="fw-semibold text-warning">- @LaMaisonDuPain</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Barre Inférieure -->
+        <div class="py-1 text-center" style="background-color: maroon;">
+            <p class="fs-6 mt-3 fw-light text-warning">&copy; 2026 La Maison du Pain — Tous droits réservés.</p>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>

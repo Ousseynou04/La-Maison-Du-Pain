@@ -29,6 +29,10 @@
         width: fit-content;
     }
 
+    .nav-link{
+        font-family: "Literata", serif;
+    }
+
     .nav-collapse{
         position: absolute;
         z-index: 20;
@@ -131,16 +135,47 @@
     
 /* section footer */
     footer{
-        background:linear-gradient(850deg, rgba(255, 232, 190, 0.733), rgba(128, 0, 0, 0.952));
+        background:linear-gradient(850deg, rgba(255, 232, 190, 0.733), rgba(128, 0, 0, 0.952)), url(images/footer.png) center/cover;
     }
 
     .nav-footer {
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
-.nav-footer:hover {
+    .nav-footer:hover {
     color: yellow;
     transform: translateX(5px);
+}
+
+/* Page Produits */
+    .bg-produits{
+    background:linear-gradient(to right, rgba(158, 85, 1, 0.808),rgba(103, 57, 28, 0.70)), url(https://cdn.lufa.com/public/marketplaceFamilies/b05981fa-7b7d-4fa8-864e-0e0b0c8b05bd.jpg) center/cover;
+    min-height: 50vh;
+}
+
+    .titre-produits, .titre-carte{
+    font-size: 63px;
+    font-family: "Literata", serif;
+    font-style: italic;
+}
+
+    .titre-fin{
+    font-family: "Satisfy", cursive;
+}
+
+    .titre-categorie{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 35px;
+    font-family: "Satisfy", cursive;
+}
+
+    .titre-categorie::before,.titre-categorie::after{
+    content: "";
+    height: 1px;
+    flex: 1;
+    background: #080808;
 }
 
 /* AUX MOBILES */
@@ -190,6 +225,23 @@
 /* section info-utiles */
     .visiter-map {
     height: 240px;
+    }
+
+/* Section footer */
+    footer{
+    background-position: center top;
+    }
+
+    .titre-produits{
+    font-size: 60px;
+    }
+
+    .titre-carte{
+        font-size: 30px;
+    }
+
+    .description-produit{
+        font-size: 15px !important;
     }
 }
 
@@ -262,5 +314,13 @@
 /* section info-utiles */
     .visiter-map {
     height: 190px;
+    }
+/* page produits */
+    .titre-produits{
+    font-size: 40px;
+    }
+
+    .titre-carte{
+        font-size: 20px;
     }
 }
