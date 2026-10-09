@@ -6,14 +6,15 @@
     <title>Maison du Pain — À Propos</title>
     <link rel="icon" type="image/png" href="/images/logo_maison_du_pain.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
+    <header class="bg-warning-subtle">
         <!-- Barre de Naviguation -->
-        <nav class="barnav container-fluid px-lg-5 px-4 d-flex justify-content-between align-items-center pt-3 bg-warning-subtle">
+        <nav class="barnav page-container px-lg-5 px-4 d-flex justify-content-between align-items-center pt-3">
             <!-- partie du logo + nom  -->
             <a href="index.html" class="text-decoration-none text-dark">
                 <div class="d-flex gap-3">
@@ -59,6 +60,35 @@
             </div>
         </div>
     </header>
+
+    <main>
+        <!-- section d'introduction de la page about -->
+        <section>
+            <div class="bg-histoire">
+                <div class="page-container p-lg-5 p-4">
+                    <span class="fw-bold text-warning fs-5">Notre Histoire</span>
+                    <h2 class="titre-produits text-white fw-semibold">Plongez dans l’âme de notre maison</h2>
+                    <p class="description-produit text-white fs-5 w-75">Découvrez l’histoire, la passion et le savoir-faire qui donnent vie à La Maison du Pain, où chaque création est préparée avec soin pour offrir des saveurs authentiques et un plaisir partagé.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Section des origines de La Maison du Pain -->
+        <section>
+            <div class="page-container bg-light p-lg-5 p-4">
+                <div class="d-flex align-items-center flex-column flex-lg-row gap-5">
+                    <div class="w-100">
+                        <h6 class="fw-bold">Fabrication artisanale</h6>
+                        <h3 class="titre-about">L’artisanat boulanger au cœur de Dakar <span class="fondation text-warning">depuis 1998</span></h3>
+                        <p class="text-muted pt-3">Depuis plus de 25 ans, La Maison du Pain fait vivre la passion du pain artisanal au cœur de Dakar. Chaque jour, nous mettons notre savoir-faire et notre exigence au service de produits frais, savoureux et préparés avec soin. 
+                        Plus qu’une boulangerie, nous sommes une maison de proximité, attachée à la qualité, à la tradition et aux petits plaisirs qui rassemblent.</p>
+                    </div>
+                    <div class="w-100">
+                        <img src="./images/about.png" class="w-100 h-100 rounded-3" alt="savoir-faire">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>

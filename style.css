@@ -125,7 +125,7 @@
     }
 
 /* section info-utiles */
-    .visiter-map {
+    .visiter-map{
     height: 400px;
     }
 
@@ -149,7 +149,7 @@
 
 /* Page Produits */
     .bg-produits{
-    background:linear-gradient(to right, rgba(158, 85, 1, 0.808),rgba(103, 57, 28, 0.70)), url(https://cdn.lufa.com/public/marketplaceFamilies/b05981fa-7b7d-4fa8-864e-0e0b0c8b05bd.jpg) center/cover;
+    background: linear-gradient(to right, rgba(158, 85, 1, 0.808),rgba(103, 57, 28, 0.70)), url(images/bg-catalogue.png) center/cover;
     min-height: 50vh;
 }
 
@@ -176,6 +176,22 @@
     height: 1px;
     flex: 1;
     background: #080808;
+}
+
+/* page about */
+.bg-histoire{
+    background:linear-gradient(to right, rgba(158, 85, 1, 0.808),rgba(103, 57, 28, 0.70)), url(images/bg-about.png) center/cover;
+    min-height: 50vh;
+}
+
+.fondation{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.titre-about{
+    color: brown;
+    font-weight: bold;
+    font-size: 55px;
+    line-height: 1;
 }
 
 /* AUX MOBILES */
@@ -233,7 +249,7 @@
     }
 
     .titre-produits{
-    font-size: 60px;
+    font-size: 55px;
     }
 
     .titre-carte{
@@ -242,6 +258,11 @@
 
     .description-produit{
         font-size: 15px !important;
+        width: 100% !important;
+    }
+
+    .titre-about{
+        font-size: 45px;
     }
 }
 
@@ -322,5 +343,9 @@
 
     .titre-carte{
         font-size: 20px;
+    }
+
+    .titre-about{
+        font-size: 35px;
     }
 }
