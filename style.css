@@ -179,20 +179,124 @@
 }
 
 /* page about */
-.bg-histoire{
+    .bg-histoire{
     background:linear-gradient(to right, rgba(158, 85, 1, 0.808),rgba(103, 57, 28, 0.70)), url(images/bg-about.png) center/cover;
     min-height: 50vh;
 }
 
-.fondation{
+    .fondation{
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
-.titre-about{
+
+    .titre-about{
     color: brown;
     font-weight: bold;
     font-size: 55px;
     line-height: 1;
 }
+
+    .text-histoire{
+        font-family:Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .timeline{
+    position: relative;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+    .timeline::before{
+    content: "";
+    position: absolute;
+    top: 22px;
+    bottom: 125px;
+    left: 50%;
+    width: 2px;
+    background: #D6B58A;
+}
+
+    .content{
+    background: #f5eee5;
+    padding: 15px;
+    border-radius: 8px;
+    flex: 1;
+    margin-right: 25px;
+
+}
+
+    .content h5{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+    .content p{
+    margin-bottom: 0;
+    font-family:'Times New Roman', Times, serif;
+    font-style: italic;
+
+}
+
+    .timeline-item{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    padding: 20px;
+}
+
+    .timeline-item:nth-child(even){
+    margin-left: 50%;
+}
+
+    .number{
+    position: absolute;
+    left: 100%;
+    top: 20px;
+    transform: translateX(-50%);
+    background: #8B5E3C;
+    color: white;
+    min-width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    z-index: 1;
+}
+
+    .timeline-item:nth-child(even) .number{
+    left: 0;
+}
+
+    .timeline-item:nth-child(odd) .content{
+    margin-right: 25px;
+}
+
+    .timeline-item:nth-child(even) .content{
+    margin-left: 25px;
+}
+
+
+/* Affichage sur mobile */
+@media (max-width: 576px) {
+    .timeline::before {
+        left: 30px;
+    }
+
+    .timeline-item,
+    .timeline-item:nth-child(even) {
+        width: 100%;
+        margin-left: 0;
+        flex-direction: row;
+        padding: 15px 0;
+        gap: 15px;
+    }
+
+    .number {
+        min-width: 60px;
+    }
+}
+
 
 /* AUX MOBILES */
 @media (max-width: 576px){
