@@ -11,3 +11,4 @@ creation complete de la section footer - pour tous les pages : 04/10/2026
 finalisation de la page index : 05/10/2026
 creation complete de la page produits - page produits : 07/10/2026
 creation complete de la section des origines de La Maison du Pain - page about : 09/10/2026
+creation complete de la section des etapes de l'histoire de la Boulangerie - page about : 12/10/2026
