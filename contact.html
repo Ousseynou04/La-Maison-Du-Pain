@@ -38,7 +38,7 @@
             <div class="d-flex align-items-center gap-lg-3 gap-2">
                 <div class="d-flex align-items-center gap-4">
                     <a href="commande.html" class="nav-link"><i class="bi bi-cart3 fs-3"></i></a>
-                    <a href="commande.html" class= "btn text-white fw-semibold d-none d-lg-block" style="background-color:maroon;">Commander</a>
+                    <a href="commande.html" class= "btn btn-commande text-white fw-semibold d-none d-lg-block">Commander</a>
                 </div>
                 <button class="btn d-lg-none fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#menuMobile"
                     onclick="this.querySelector('i').classList.toggle('bi-x-lg'); this.querySelector('i').classList.toggle('bi-list');">
@@ -56,10 +56,25 @@
                     <li><a href="contact.html" class="nav-link active fw-semibold fs-5 text-uppercase">Contact</a></li>
                 </ul>
                 <!-- Commander dans le menu mobile -->
-                <a href="commande.html" class="btn text-white mb-0 w-100 fs-5 text-uppercase" style="background-color:maroon;">Commander</a>
+                <a href="commande.html" class="btn btn-commande text-white mb-0 w-100 fs-5 text-uppercase">Commander</a>
             </div>
         </div>
     </header>
+
+    <main>
+        <!-- section d'introduction de la page contact -->
+        <section>
+            <div class="bg-contact">
+                <div class="page-container p-lg-5 p-4">
+                    <span class="fw-bold text-warning fs-5">Restons en contact</span>
+                    <h2 class="titre-page text-white fw-semibold">Parlons de vos envies gourmandes</h2>
+                    <p class="description-produit text-white fs-5 w-75">Une Question, une commande spéciale ou une demande d'information ?
+                        La Maison du pain est à votre écoute pour vous accompagner.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>

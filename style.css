@@ -24,6 +24,16 @@
         top: 0;
     }
 
+    .btn-commande{
+        background-color: maroon;
+        transition: 0.52s ease;
+    }
+
+    .btn-commande:hover{
+        background-color: yellow;
+        color: maroon !important;
+    }
+
     .nav-link.active{
         border-bottom: 1px solid black;
         width: fit-content;
@@ -229,6 +239,12 @@
         font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
 
+/* section introductionn - page contact */
+    .bg-contact{
+        background:linear-gradient(to right, rgba(158, 85, 1, 0.808),rgba(103, 57, 28, 0.70)), url(images/contact.png) top/cover;
+        min-height: 50vh;
+    }
+
 /* section footer - All Page */
     footer{
         background:linear-gradient(850deg, rgba(255, 232, 190, 0.733), rgba(128, 0, 0, 0.952)), url(images/footer.png) center/cover;
@@ -244,7 +260,7 @@
     }
 
 /* AUX TABLETTES */
-@media (min-width: 768px) {
+@media (max-width: 1024px) {
 
 /* Section footer - all pages */
     #Nom{
