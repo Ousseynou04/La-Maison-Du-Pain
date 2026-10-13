@@ -13,3 +13,5 @@ creation complete de la page produits - page produits : 07/10/2026
 creation complete de la section des origines de La Maison du Pain - page about : 09/10/2026
 creation complete de la section des etapes de l'histoire de la Boulangerie - page about : 12/10/2026
 creation complete de la section des valeurs de la Boulangerie - page about : 12/10/2026
+creation complete de la section mot du chef - page about : 13/10/2026
+finalisation de la page about : 13/10/2026

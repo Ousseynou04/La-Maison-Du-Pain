@@ -181,6 +181,7 @@
     .etapes{
         background:rgb(73, 1, 1);
     }
+
     .titre-origine{
         color: brown;
         font-weight: bold;
@@ -188,7 +189,7 @@
         line-height: 1;
     }
 
-    .text-histoire{
+    .sous-titre{
     font-family:Georgia, 'Times New Roman', Times, serif;
     }
 
@@ -223,7 +224,12 @@
         font-family:'Times New Roman', Times, serif;
     }
 
-    /* section footer - All Page */
+/* section mot du chef - page about */
+    .mot-chef{
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+/* section footer - All Page */
     footer{
         background:linear-gradient(850deg, rgba(255, 232, 190, 0.733), rgba(128, 0, 0, 0.952)), url(images/footer.png) center/cover;
     }
@@ -236,6 +242,19 @@
         color: yellow;
         transform: translateX(5px);
     }
+
+/* AUX TABLETTES */
+@media (min-width: 768px) {
+
+/* Section footer - all pages */
+    #Nom{
+        font-size: 19px !important;
+    }
+
+    .Nom-txt{
+        font-size: 8px !important;
+    }
+}
 
 /* AUX MOBILES */
 @media (max-width: 576px){
