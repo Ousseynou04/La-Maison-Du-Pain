@@ -78,8 +78,8 @@
         <section>
             <div class="page-container p-lg-5 p-4">
                 <!-- titre -->
-                <div class="text-center p-5">
-                    <h6 class="fw-bold">Nos Coordonées</h6>
+                <div class="text-center p-3">
+                    <h6 class="fw-bold">Nos Coordonnées</h6>
                     <h2 class="sous-titre fw-bold fs-1" style="color: maroon;">comment nous joindre ?</h2>
                     <p class="text-muted">Que ce soit pour une commande, une question ou une visite, retoruvez ici toutes nos coordonées.</p>
                 </div>
@@ -136,6 +136,128 @@
                 </div>
             </div>
         </section>
+        <!-- Section formulaire de contact -->
+        <section class="bg-warning">
+            <div class="page-container p-lg-5 p-4">
+                <!-- Titre -->
+                <div class="text-center p-2 mb-5">
+                    <h6 class="fw-bold">Formulaire de contact</h6>
+                    <h2 class="sous-titre text-white fw-bold fs-1">Échangeons en toute confiance</h2>
+                    <p class="text-muted">Partagez vos demandes en toute confiance. Notre équipe vous répondra dans les meilleurs délais. </p>
+                </div>
+                <div class="row g-5">
+                    <div class="col-12 col-lg-7">
+                        <div class="h-100 p-4 p-lg-5 border rounded-3 shadow bg-white">
+                            <!-- Titre fomulaire -->
+                            <div class="mb-5">
+                                <p class="text-muted text-uppercase fw-semibold">Écrivez-nous !</p>
+                                <h2 class="fw-bold sous-titre">Envoyez-nous un message</h2>
+                                <p>Décrivez votre besoin et laissez-nous vos coordonnées pour que nous puissions vous répondre.</p>
+                            </div>
+                            <!-- Formulaire -->
+                            <form action="#" method="post">
+                                <!-- Nom et prénom -->
+                                <div class="row g-3 mb-3">
+                                    <div class="col-md-6">
+                                        <label for="nom" class="form-label fw-semibold">Nom *</label>
+                                        <input type="text" class="form-control" id="nom" name="nom" placeholder="Votre nom" autocomplete="family-name" required>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <label for="prenom" class="form-label fw-semibold">Prénom *</label>
+                                        <input type="text" class="form-control" id="prenom" name="prenom" placeholder="Votre prenom" autocomplete="given-name" required>
+                                    </div>
+                                </div>
+                                <div class="row g-3 mb-3">
+                                    <!-- Adresse e-mail -->
+                                    <div class="col-md-6">
+                                        <label for="email" class="form-label fw-semibold">Adresse e-mail *</label>
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="exemple@email.com" autocomplete="email" required>
+                                    </div>
+                                    <!-- Téléphone -->
+                                    <div class="col-md-6">
+                                        <label for="telephone" class="form-label fw-semibold">Téléphone (facultatif)</label>
+                                        <input type="tel" class="form-control" id="telephone" name="telephone" placeholder="+221 XXX XX XX" autocomplete="tel">
+                                    </div>
+                                </div>
+                                <!-- Sujet -->
+                                <div class="mb-3">
+                                    <label for="sujet" class="form-label fw-semibold">Sujet *</label>
+                                    <select class="form-select" id="sujet" name="sujet" required>
+                                        <option value="" selected disabled>Choisissez un sujet</option>
+                                        <option value="information">Demande d'information</option>
+                                        <option value="commande">Commande ou réservation</option>
+                                        <option value="reclamation">Réclamation</option>
+                                        <option value="partenariat">Partenariat professionnel</option>
+                                        <option value="autre">Autre demande</option>
+                                    </select>
+                                </div>
+                                <!-- Message -->
+                                <div class="mb-4">
+                                    <label for="message" class="form-label fw-semibold">Votre message</label>
+                                    <textarea class="form-control" id="message" name="message" rows="5" placeholder="Écrivez votre message ici..."></textarea>
+                                </div>
+                                <!-- consentement à la collecte d'info -->
+                                <div class="form-check mb-4">
+                                    <input type="checkbox" class="form-check-input" name="consentement" id="consentement" value="oui" required>
+                                    <label class="form-check-label fw-semibold small" for="consentement">J'accepte que mes informations soient utilisées pour répondre à ma demande.</label>
+                                </div>
+                                <!-- Bouton d'envoi -->
+                                <div class="text-center">
+                                    <button type="submit" class="btn text-white px-5 py-2 fw-semibold w-100" style="background-color: maroon;"><i class="bi bi-send-fill"></i> Envoyer le Message</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- Panneau d'informations -->
+                    <div class="col-12 col-lg-5">
+                        <div class="h-100  p-5 rounded-3" style="background-color: maroon;">
+                            <!-- titre Panneau -->
+                            <div class="mb-5">
+                                <h5 class="text-warning fw-bold">Maison du Pain</h5>
+                                <h2 class="text-white fw-bold">Le goût du partage commence par un echange</h2>
+                                <p class="text-white">Nous sommes à votre disposition pour préparer vos commandes et repondre à toutes vos questions.</p>
+                            </div>
+                            <div>
+                                <!-- commandes spéciales -->
+                                <div class="d-flex gap-3 mb-4">
+                                    <div><i class="bi bi-basket2-fill text-warning fs-3"></i></div>
+                                    <div>
+                                        <span class="fw-bold text-white fs-5">Commande Spéciales</span>
+                                        <p class="text-white">Préparons ensemble vos besoins pour vos fêtes et vos événements</p>
+                                    </div>
+                                </div>
+                                <!-- partenariats -->
+                                <div class="d-flex gap-3 mb-4">
+                                    <div><i class="bi bi-people-fill text-warning fs-3"></i></div>
+                                    <div>
+                                        <span class="fw-bold text-white fs-5">Partenariats</span>
+                                        <p class="text-white">Vous êtes un professionnel ? contactez-nous pour échanger vos besoins</p>
+                                    </div>
+                                </div>
+                                <!-- Avis clients -->
+                                <div class="d-flex gap-3 mb-4">
+                                    <div><i class="bi bi-heart-fill text-warning fs-3"></i></div>
+                                    <div>
+                                        <span class="fw-bold text-white fs-5">Vos Avis Comptent</span>
+                                        <p class="text-white">vos suggestions nous permettent d'améliorer continuellement notre accueil et nos produits</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="text-white">
+                            <!-- appel direct -->
+                            <div>
+                                <div class="mt-4">
+                                    <h6 class="text-white fw-semibold mb-4">Besoin d'une réponse directe ?</h6>
+                                    <a href="tel:+221771234567" class="btn btn-warning telephone rounded-pill fw-bold"><i class="bi bi-telephone-fill"></i> +221 77 123 45 67</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
