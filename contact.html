@@ -63,7 +63,7 @@
 
     <main>
         <!-- section d'introduction de la page contact -->
-        <section>
+        <section id="contact">
             <div class="bg-contact">
                 <div class="page-container p-lg-5 p-4">
                     <span class="fw-bold text-warning fs-5">Restons en contact</span>
@@ -74,10 +74,10 @@
                 </div>
             </div>
         </section>
-        <!-- section des coordonnées de la boulangerie  -->
-        <section>
+        <!-- section des coordonnées de la boulangerie -->
+        <section id="coordonnées">
             <div class="page-container p-lg-5 p-4">
-                <!-- titre -->
+                <!-- titre de la section -->
                 <div class="text-center p-3">
                     <h6 class="fw-bold">Nos Coordonnées</h6>
                     <h2 class="sous-titre fw-bold fs-1" style="color: maroon;">comment nous joindre ?</h2>
@@ -121,7 +121,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Horaires  -->
+                    <!-- Horaires -->
                     <div class="col-12 col-sm-6 col-lg-3">
                         <div class="border p-3 rounded-3  text-center h-100">
                             <div class="mb-3"><i class="bi bi-clock-fill bg-warning-subtle rounded-5 fs-4 px-2 py-1"></i></div>
@@ -137,7 +137,7 @@
             </div>
         </section>
         <!-- Section formulaire de contact -->
-        <section class="bg-warning">
+        <section id="fomulaire" class="bg-warning">
             <div class="page-container p-lg-5 p-4">
                 <!-- Titre -->
                 <div class="text-center p-2 mb-5">
@@ -255,17 +255,16 @@
                 </div>
             </div>
         </section>
-        <!-- section visitez-nous  -->
-        <section>
+        <!-- section visitez-nous -->
+        <section id="visite">
             <div class="page-container p-lg-5 p-4">
                 <div class="d-flex gap-5 flex-lg-row flex-column align-items-center">
                     <div class="flex-fill"> 
                         <h5 class="text-warning">Venez nous rendre visite</h5>
                         <h2 class="sous-titre text-dark fw-bold fs-1">Nos Portes Vous Sont Ouvertes</h2>
-                        <p class="fs-5 text-muted mb-5">Retrouvez-nous au <span class="fw-semibold">Plateau, sur l'Avenue Jean Jaurès</span> à Dakar. Notre équipe vous accueille pour vous proposer
+                        <p class="fs-5 text-muted mb-5 pe-lg-2 pe-3">Retrouvez-nous au <span class="fw-semibold">Plateau, sur l'Avenue Jean Jaurès</span> à Dakar. Notre équipe vous accueille pour vous proposer
                             du pain frais et des produits préparés avec soin.                        
                         </p>
-
                         <div>
                             <a href="https://maps.app.goo.gl/w2hc87tSXg8GLn1B7" target="_blank" class="Itinéraire fs-4 fw-semibold rounded-pill px-4 py-2 text-decoration-none">
                                 <i class="bi bi-geo-alt-fill"></i> Itinéraire Google Maps
@@ -278,8 +277,95 @@
                 </div>
             </div>
         </section>
-
+        <!-- section emplacement de la boulangerie -->
+        <section id="localisation" class="bg-light">
+            <div class="page-container p-lg-5 p-4">
+                <div class="text-center mb-5">
+                    <p class="text-uppercase text-dark fw-semibold"><i class="bi bi-geo-alt-fill text-danger"></i> Notre emplacement</p>
+                    <h2 class="sous-titre mb-3 text-warning fw-semibold">Retrouvez-nous à Dakar</h2>
+                    <h4>Plateau, Avenue Jean Jaurès — Dakar, Sénégal</h4>
+                </div>
+                <!-- carte de localisation -->
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3859.133618553727!2d-17.467945225543104!3d14.705034774512606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec173d8b59a0a91%3A0x2980f739cf6804f2!2sMaison%20du%20pain!5e0!3m2!1sfr!2ssn!4v1790900190935!5m2!1sfr!2ssn" 
+                    class="visiter-map border rounded-4 w-100" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <footer>
+        <div class="page-container p-lg-5 p-4">
+            <!-- conteneur du Pied de page -->
+            <div class="row g-5">
+                <!-- Bloc identité de la Boulangerie -->
+                <div class="col-12 col-lg-3">
+                    <a href="index.html" class="text-decoration-none text-dark">
+                        <div class="d-flex gap-3">
+                            <img src="images/logo_maison_du_pain.png" class="logo h-50" style="width: 2.5rem;" alt="logo">
+                            <div class="NameBrand" style="line-height: 1px;">
+                                <h4 id="Nom">Maison Du Pain</h4>
+                                <p class="Nom-txt fw-bold" style="font-size: 10px;">Boulangerie Au Goût Authentique</p>
+                            </div>
+                        </div>
+                    </a>
+                    <p class="fw-semibold">Du pain frais, des produits de qualité et tout le savoir-faire de notre Boulangerie, chaque Jour.</p>
+                </div>
+                <!-- Bloc Liens rapides -->
+                <div class="col-12 col-lg-3">
+                    <h5 style="color: maroon;">Navigation</h5>
+                    <ul class="list-unstyled fs-5">
+                        <li class="nav-item"><a href="index.html" class="nav-link nav-footer">Accueil</a></li>
+                        <li class="nav-item"><a href="produits.html" class="nav-link nav-footer">Produits</a></li>
+                        <li class="nav-item"><a href="about.html" class="nav-link nav-footer">À Propos</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link nav-footer">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- Bloc Coordonées -->
+                <div class="col-12 col-lg-3">
+                    <h5 class="text-white">Nous Contacter</h5>
+                    <div>
+                        <div class="rounded-3 d-flex gap-2">
+                            <div class="mt-2"><i class="bi bi-geo-alt text-warning rounded-5 fs-4"></i></div>
+                            <div>
+                                <span class="fw-bold">Dakar, Sénégal</span> 
+                                <p class="text-white">Plateau, Avenue Jean Jaurès </p>
+                            </div>
+                        </div>
+                        <div class="rounded-3 d-flex gap-2">
+                            <div class="mt-2"><i class="bi bi-telephone text-warning rounded-5 fs-4"></i></div>
+                            <div>
+                                <span class="fw-bold">+221 77 123 45 67</span>
+                                <p class="text-white">Tous les jours de 06h00 à 22h00</p>
+                            </div>
+                        </div>
+                        <div class="rounded-3 d-flex gap-2">
+                            <div class="mt-2"><i class="bi bi-envelope text-warning rounded-5 fs-4"></i></div>
+                            <div>
+                                <span class="fw-bold">LaMaisonDuPain@gmail.com</span> 
+                                <p class="text-white">On vous répond sous 24 h.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Bloc Reseaux Sociaux -->
+                <div class="col-12 col-lg-3">
+                    <h5 class="text-warning">Suivez-Nous</h5>
+                    <p class="text-white">Rejoignez notre Communauté sur les Réseaux Sociaux</p>
+                        <div class="d-flex gap-3">
+                            <a href="facebook.com"><i class="bi bi-facebook text-warning"></i></a>
+                            <a href="instagram.com"><i class="bi bi-instagram text-warning"></i></a>
+                            <a href="tiktok.com"><i class="bi bi-tiktok text-warning"></i></a>
+                            <a href="youtube.com"><i class="bi bi-youtube text-warning"></i></a>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <!-- Barre Inférieure -->
+        <div class="py-1 text-center" style="background-color: maroon;">
+            <p class="fs-6 mt-3 fw-light text-warning">&copy; 2026 La Maison du Pain — Tous droits réservés.</p>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
