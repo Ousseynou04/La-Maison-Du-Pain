@@ -18,3 +18,4 @@ finalisation de la page about : 13/10/2026
 creation de la section d'introduction de la page contact - page contact : 13/10/2026
 creation de la section des coordonnées de la boulagerie - page contact : 13/10/2026
 creation de la section formulaire de contact - page contact : 14/10/2026
+creation de la section Visitez-nous - page contact : 14/10/2026

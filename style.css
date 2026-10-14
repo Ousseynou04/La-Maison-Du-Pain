@@ -239,13 +239,25 @@
         font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
 
-/* section introductionn - page contact */
+/* section introduction - page contact */
     .bg-contact{
         background:linear-gradient(to right, rgba(158, 85, 1, 0.808),rgba(103, 57, 28, 0.70)), url(images/contact.png) top/cover;
         min-height: 50vh;
     }
 
-/* section footer - All Page */
+/* section Visitez-nous - page contact */
+    .Itinéraire{
+        border: 1px solid maroon;
+        color: maroon;
+        transition: 0.5s ease;
+    }
+
+    .Itinéraire:hover{
+        background-color: maroon;
+        color: white;
+    }
+
+/* section footer - All Pages */
     footer{
         background:linear-gradient(850deg, rgba(255, 232, 190, 0.733), rgba(128, 0, 0, 0.952)), url(images/footer.png) center/cover;
     }
@@ -448,7 +460,7 @@
         height: 190px;
     }
 
-/* section introduction - page produits*/
+/* section introduction - page produits */
     .titre-page{
         font-size: 40px;
     }
@@ -462,8 +474,15 @@
     .titre-origine{
         font-size: 35px;
     }
-/* section formulaire et infos */
+
+/* section formulaire de contact - page contact */
     .telephone{
-    font-size: 15px;
+        font-size: 15px;
     }
+
+/* section Visitez-nous - page contact */
+    .Itinéraire{
+        font-size: 15px !important;
+    }
+
 }
