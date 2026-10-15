@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.page-container {
+.page-container{
     width: 100%;
     max-width: 1320px; 
     margin-inline: auto;
@@ -63,18 +63,12 @@
     }
 
     .titre-hero{
-    font-size: 70px;
-    font-family: "Goldman", sans-serif;
-    font-weight: bold;
-    max-width:580px;
-    color: white;
-    text-transform: uppercase;
-    }
-
-    #pain{
-        color: gold;
-        font-style: italic;
-        font-size: 1em;
+        font-size: 70px;
+        font-family: "Goldman", sans-serif;
+        font-weight: bold;
+        max-width:580px;
+        color: white;
+        text-transform: uppercase;
     }
 
     .description{
@@ -200,7 +194,7 @@
     }
 
     .sous-titre{
-    font-family:Georgia, 'Times New Roman', Times, serif;
+        font-family:Georgia, 'Times New Roman', Times, serif;
     }
 
     .timeline{
@@ -257,6 +251,13 @@
         color: white;
     }
 
+/* section d'introduction - page commande */
+    .bg-commande{
+        background:linear-gradient(to right, rgba(158, 85, 1, 0.808),rgba(103, 57, 28, 0.70)), url(images/panier.png) center/cover;
+        min-height: 50vh;
+        
+    }
+
 /* section footer - All Pages */
     footer{
         background:linear-gradient(850deg, rgba(255, 232, 190, 0.733), rgba(128, 0, 0, 0.952)), url(images/footer.png) center/cover;
@@ -271,6 +272,14 @@
         transform: translateX(5px);
     }
 
+/* section gestion panier de commande - page commande */
+@media (min-width: 992px) {
+    /* Position sticky uniquement aux ordi et tabllettes */
+    .resume-panier{
+        position: sticky;
+        top: 82px;
+    }
+}
 /* AUX TABLETTES */
 @media (max-width: 1024px) {
 

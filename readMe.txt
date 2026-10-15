@@ -21,3 +21,5 @@ creation de la section formulaire de contact - page contact : 14/10/2026
 creation de la section Visitez-nous - page contact : 14/10/2026
 creation de la section emplacement de la boulangerie - page contact : 14/10/2026
 finalisation de la page contact : 14/10/2026
+creation et finalisation de la page commande : 15/10/2026
+finalisation de la partie Front-end : 15/10/2026
