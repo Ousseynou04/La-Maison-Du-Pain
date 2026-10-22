@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page de connexion — Maison du Pain</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <!-- Section d'Authentification -->
+    <section>
+        <!-- conteneur de la section -->
+        <div class="d-flex flex-column justify-content-center align-items-center vh-100 bg-light">
+            <div class="p-5 rounded-4 shadow shadow-xl bg-warning-subtle">
+                <!-- Titre de la page de connexion -->
+                <div class="mb-4 text-center">
+                    <img src="../images/logo_maison_du_pain.png" style="width: 3rem;" alt="logo">
+                    <h6 class="text-center mt-3">Espace administrateur</h6>
+                    <h3 style="font-family: 'Times New Roman', Times, serif;" class="mt-2">La Maison du Pain</h3>
+                </div>
+                <!-- Formulaire d'authentification et de connexion -->
+                <div>
+                    <form action="#">
+                        <div class="mb-3">
+                            <label for="email" class="form-label">E-mail</label>
+                            <input type="email" name="email" id="email" placeholder="veuillez entrer l'e-mail" class="form-control rounded-5">
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="MDP" class="form-label">Mot de Passe</label>
+                            <input type="password" name="motdepasse" placeholder="veuillez entrer le mot de passe" id="MDP" class="form-control rounded-5">
+                        </div>
+
+                        <div>
+                            <div class="mb-3">
+                                <a type="submit" href="#" class="btn w-100 fw-semibold text-white rounded-5" style="background-color: darkred;">Se Connecter</a>
+                            </div>
+                                <div class="text-center"><a href="../index.html" class="text-decoration-none text-muted"><i class="bi bi-arrow-left"></i> Retour au site Public de la Boulangerie</a></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
