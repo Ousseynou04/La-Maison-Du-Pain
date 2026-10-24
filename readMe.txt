@@ -2,7 +2,7 @@ Debut du projet : le 19/09/2026
 
 Espace public du site 
 
-creation complete de la Barre de Naviguation - pour toutes les pages : 21/09/2026
+creation complete de la Barre de Navigation - pour toutes les pages : 21/09/2026
 creation complete de la section d'Accueil - page index : 27/09/2026
 creation complete de la section de presentation des services - page index : 28/09/2026
 creation complete de la section de presentation des produits favoris - page index : 29/09/2026
@@ -29,3 +29,4 @@ finalisation de la partie Front-end : 15/10/2026
 Espace administration du site 
 
 creation de la page connexion - page connexion : 22/10/2026 
+creation de la barre de Navigation - pour toutes les pages de l'espace admin : 24/10/2026

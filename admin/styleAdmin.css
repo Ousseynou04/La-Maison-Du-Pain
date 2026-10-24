@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+    .btn-deconnexion{
+        transition: 0.52s ease;
+    }
+
+    .btn-deconnexion:hover{
+        background-color: rgba(255, 0, 0, 0.164);
+    }
+
+    .btn-boutique{
+        transition: 0.52s ease;
+    }
+
+    .btn-boutique:hover{
+        background-color: maroon;
+        color: white !important;
+    }
